@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">PDFer</string>
+    <string name="title_activity_main">PDFer</string>
+    <string name="package_name">com.pdfer.app</string>
+    <string name="custom_url_scheme">com.pdfer.app</string>
+    <string name="open_with_pdfer">Открыть в PDFer</string>
+    <string name="send_to_pdfer">Отправить в PDFer</string>
+    <string name="send_multiple_to_pdfer">Отправить в PDFer</string>
+    <string name="admob_app_id">ca-app-pub-7222055770291725~8456018202</string>
+</resources>

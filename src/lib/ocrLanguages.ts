@@ -1,0 +1,21 @@
+/** Коды языков Tesseract.js (через «+», например rus+eng). Список: https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html */
+export const OCR_LANG_PRESETS: { value: string; label: string }[] = [
+  { value: 'rus+eng', label: 'Русский + English' },
+  { value: 'eng', label: 'Только English' },
+  { value: 'rus', label: 'Только русский' },
+  { value: 'ukr+eng', label: 'Українська + English' },
+  { value: 'bel+rus', label: 'Беларуская + русский' },
+  { value: 'kaz+rus', label: 'Қазақша + русский' },
+  { value: 'deu+eng', label: 'Deutsch + English' },
+  { value: 'fra+eng', label: 'Français + English' },
+  { value: 'spa+eng', label: 'Español + English' },
+  { value: 'ita+eng', label: 'Italiano + English' },
+  { value: 'por+eng', label: 'Português + English' },
+  { value: 'pol+eng', label: 'Polski + English' },
+  { value: 'tur+eng', label: 'Türkçe + English' },
+  { value: 'chi_sim+eng', label: '中文（简体）+ English' },
+  { value: 'chi_tra+eng', label: '中文（繁體）+ English' },
+  { value: 'jpn+eng', label: '日本語 + English' },
+  { value: 'kor+eng', label: '한국어 + English' },
+  { value: 'ara+eng', label: 'العربية + English' },
+]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Как в веб-интерфейсе: slate-900 → slate-950 (#020617) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#0f172a"
+                android:endColor="#020617" />
+        </shape>
+    </item>
+    <!-- Тонкая линия как в шапке приложения (rose-400) -->
+    <item android:height="1dp" android:gravity="top|fill_horizontal">
+        <shape android:shape="rectangle">
+            <solid android:color="#38fb7185" />
+        </shape>
+    </item>
+</layer-list>
