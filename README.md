@@ -1,4 +1,10 @@
-# React + TypeScript + Vite
+# PDFer
+
+React + TypeScript + Vite app (Android via Capacitor). **Play / AdMob static site** (privacy + `app-ads.txt`) lives in [`docs/`](docs/) for [GitHub Pages](docs/README.md). After editing `public/privacy.html` or `public/app-ads.txt`, run `npm run site:sync-github-pages-docs` and commit the `docs/` copies.
+
+---
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

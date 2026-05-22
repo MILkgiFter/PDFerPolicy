@@ -13,7 +13,8 @@
     "android:icons": "npx @capacitor/assets generate --android --assetPath assets --iconBackgroundColor \"#222326\" --iconBackgroundColorDark \"#222326\" --splashBackgroundColor \"#020617\" --splashBackgroundColorDark \"#020617\" --logoSplashScale 0.11 && node scripts/patch-android-adaptive-inset.mjs && node scripts/refine-launcher-icons.mjs",
     "android:assemble": "cd android && gradlew.bat assembleDebug",
     "android:apk": "npm run build && npm run cap:sync:android && npm run android:icons && npm run android:assemble",
-    "android:bundle": "npm run build && npm run cap:sync:android && npm run android:icons && cd android && gradlew.bat bundleRelease"
+    "android:bundle": "npm run build && npm run cap:sync:android && npm run android:icons && cd android && gradlew.bat bundleRelease",
+    "site:sync-github-pages-docs": "node scripts/sync-github-pages-docs.mjs"
   },
   "dependencies": {
     "@capacitor-community/admob": "^8.0.0",
