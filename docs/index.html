@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark" />
     <meta name="robots" content="noindex" />
-    <meta name="description" content="PDFer — privacy policy & app listings (GitHub Pages)." />
-    <title>PDFer</title>
+    <meta name="description" content="Сайт разработчика: приложения и app-ads.txt." />
+    <title>Портал приложений · Developer portal</title>
     <style>
       :root {
         color-scheme: dark;
@@ -21,80 +21,120 @@
       }
       body {
         margin: 0;
-        padding: 1.5rem 1rem 2rem;
+        padding: 1.5rem 1rem 2.5rem;
         font-family: ui-sans-serif, system-ui, sans-serif;
         background: var(--bg);
         color: var(--text);
         line-height: 1.55;
-        font-size: 0.9375rem;
       }
       .wrap {
-        max-width: 34rem;
+        max-width: 40rem;
         margin: 0 auto;
       }
       h1 {
         font-size: 1.5rem;
         font-weight: 800;
         letter-spacing: -0.02em;
-        margin: 0 0 0.35rem;
+        margin: 0 0 0.25rem;
       }
-      p {
+      .intro {
         color: var(--muted);
-        margin: 0 0 1rem;
+        margin: 0 0 1.5rem;
+        font-size: 0.9rem;
       }
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+      section {
+        margin-bottom: 1.75rem;
       }
-      li {
-        margin-bottom: 0.65rem;
+      h2 {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        margin: 0 0 0.65rem;
       }
-      a {
-        color: var(--accent);
-        font-weight: 600;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
+      .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
       }
       .card {
+        display: block;
         background: var(--card);
         border: 1px solid rgba(251, 113, 133, 0.2);
         border-radius: 1rem;
         padding: 1rem 1.15rem;
-        margin-top: 1.25rem;
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.15s ease;
       }
-      .mono {
-        font-size: 0.8rem;
-        word-break: break-all;
+      .card:hover {
+        border-color: rgba(251, 113, 133, 0.45);
+      }
+      .card strong {
+        display: block;
+        color: #fff;
+        font-size: 1rem;
+      }
+      .card span {
+        display: block;
+        margin-top: 0.25rem;
+        font-size: 0.8125rem;
         color: var(--muted);
       }
-      hr {
-        border: 0;
+      .tech {
+        font-size: 0.8125rem;
+        color: var(--muted);
         border-top: 1px solid rgba(255, 255, 255, 0.08);
-        margin: 1.25rem 0;
+        padding-top: 1.25rem;
+        margin-top: 0.5rem;
+      }
+      .tech a {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .tech a:hover {
+        text-decoration: underline;
+      }
+      code {
+        font-size: 0.8rem;
+      }
+      .en {
+        font-size: 0.8125rem;
+        color: var(--muted);
+        margin-top: 1rem;
       }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <h1>PDFer</h1>
-      <p>
-        Минисайт для карточки в Google Play: политика конфиденциальности и файл
-        <strong>app-ads.txt</strong> (AdMob).
-      </p>
-      <ul class="card" aria-label="Ссылки">
-        <li><a href="privacy.html">Политика конфиденциальности · Privacy policy</a></li>
-        <li><a href="app-ads.txt">app-ads.txt</a> <span class="mono">(plain text)</span></li>
-      </ul>
+      <h1>Портал приложений</h1>
+      <p class="intro">Статический сайт для Google Play и AdMob — политики по каждому приложению.</p>
 
-      <hr />
+      <section aria-labelledby="apps">
+        <h2 id="apps">Приложения</h2>
+        <div class="grid">
+          <a class="card" href="apps/pdfer/index.html">
+            <strong>PDFer</strong>
+            <span>Работа с PDF · <code>com.pdfer.app</code></span>
+          </a>
+        </div>
+      </section>
 
-      <p lang="en" style="font-size: 0.875rem">
-        Static pages for the <strong>PDFer</strong> app (<code>com.pdfer.app</code>). Use the HTTPS base URL from this site as the
-        <strong>developer website</strong> in Play Console after enabling GitHub Pages (see <code>docs/README.md</code> in the repo).
-      </p>
+      <section class="tech" aria-labelledby="admob">
+        <h2 id="admob">AdMob · app-ads.txt</h2>
+        <p style="margin: 0 0 0.5rem">
+          Один файл в <strong>корне этого сайта</strong> для всех приложений с тем же аккаунтом AdMob (если понадобятся строки под
+          другие сети — добавятся ниже тем же форматом IAB).
+        </p>
+        <p style="margin: 0"><a href="app-ads.txt"><code>/app-ads.txt</code></a></p>
+
+        <p class="en" lang="en">
+          In Play Console, set the <strong>developer website</strong> to this site’s root URL (same for every app hosted here),
+          but use each app’s <strong>privacy policy URL</strong> under <code>/apps/&lt;slug&gt;/privacy.html</code>.
+        </p>
+      </section>
     </div>
   </body>
 </html>
